@@ -32,7 +32,7 @@ input {
   width: 100%;
   border-radius: 6px;
   border: 1px solid #c8cac9;
-  padding: 10px;
+  padding: 13px;
   color: #a8a8a8;
   font-family: 'AtlasGrotesk', sans-serif;
   font-style: normal;
@@ -44,7 +44,7 @@ select {
   border: 1px solid #c8cac9;
   background-color: #f3f3f3;
   border-radius: 6px;
-  padding: 12px 1px;
+  padding: 13px 1px;
   color: #333;
   font-family: 'Brandon Grotesque', sans-serif;
   font-style: normal;
@@ -62,7 +62,7 @@ option {
   padding-bottom: 3px;
   font-family: "Brandon Grotesque", sans-serif;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 450;
 }
 
 .padding234 {
