@@ -9,13 +9,3 @@
   width: 100%;
   background-color: lightgray;
 }
-
-#card-deck {
-  display: flex;
-}
-
-.pokemon-card,
-#card-deck {
-  padding: 10px;
-  margin: 10px;
-}
