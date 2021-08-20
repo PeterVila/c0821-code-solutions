@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-top: 10%;
+}
+
+footer {
+  text-align: center;
+  margin: 15px;
+}
+
+.title {
+  font-family: 'Karla', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 50px;
+}
+
+.header-font {
+  font-family: 'Karla', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.text-font {
+  font-family: 'Karla', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #444;
+  line-height: 28px;
+  font-size: 15px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  padding: 30px;
+}
+
+.col-one-half {
+  flex-basis: 50%;
+  display: inline-flex;
+  margin: 0 30px;
+}
+
+.column-one-fifth {
+  flex-basis: 20%;
+}
+
+.column-four-fifths {
+  flex-basis: 80%;
+}
+
+button {
+  padding: 11px 40px;
+  color: #d14c45;
+  border: 2.5px solid #d14c45;
+  background-color: white;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.head-p {
+  padding: 0 25px;
+}
+
+h1 {
+  margin: 15px;
+}
