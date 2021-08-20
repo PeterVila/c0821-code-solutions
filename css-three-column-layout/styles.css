@@ -13,12 +13,23 @@ body {
   padding-top: 10%;
 }
 
-h1 {
+img {
+  width: 50%;
+  padding-top: 25%;
+}
+
+section {
+  flex-basis: calc(100% / 3);
+  align-items: center;
+  margin: 20px;
+}
+
+.slogan {
   text-align: center;
   color: white;
 }
 
-h3 {
+.section-title {
   color: white;
 }
 
@@ -35,18 +46,7 @@ h3 {
   background-color: white;
 }
 
-img {
-  width: 50%;
-  padding-top: 30px;
-}
-
-section {
-  flex-basis: calc(100% / 3);
-  align-items: center;
-  margin: 20px;
-}
-
-p {
+.grey-text {
   color: #dadcdd;
   text-align: center;
 }
