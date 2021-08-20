@@ -4,9 +4,6 @@
 
 body {
   background-color: #1996da;
-  width: 80%;
-  margin: auto;
-  height: 100vh;
   font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -33,9 +30,8 @@ section {
   color: white;
 }
 
-.container {
+.row {
   display: flex;
-  text-align: center;
 }
 
 .white-circle {
@@ -49,4 +45,14 @@ section {
 .grey-text {
   color: #dadcdd;
   text-align: center;
+}
+
+.text-centering {
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  height: 100vh;
 }
