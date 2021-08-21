@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+.navigation {
+  border-bottom: 1px solid black;
+}
+
+.row {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.col-one-fourth {
+  flex-basis: 25%;
+}
+
+.col-three-fourths {
+  flex-basis: 75%;
+  display: flex;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* Hero */
+
+.hero {
+  text-emphasis: none;
+}
+
+.hero-background {
+  text-emphasis: none;
+}
+
+.absolute {
+  text-emphasis: none;
+}
+
+/* clinicians */
+
+.clinicians {
+  background-color: #fafafa;
+}
+
+.clinicians-info {
+  flex-basis: 100%;
+}
+
+/* locations */
+
+.locations {
+  background-color: #fafafa;
+  border-bottom: 1px solid black;
+}
+
+.col-one-half {
+  flex-basis: 50%;
+}
+
+/* ready */
+
+.ready {
+  background-color: white;
+}
+
+.content-start {
+  text-align: start;
+}
+
+.content-end {
+  text-align: end;
+}
+
+/* about-us */
+
+.about-us {
+  background-color: #525351;
+}
+
+.vertical-link {
+  display: flex;
+  flex-flow: column;
+}
+
+/* footer  */
+
+.footer {
+  display: flex;
+}
+
+.last-col-one-fifth {
+  flex-basis: calc(100% / 5);
+  padding: 50px 0;
+  display: flex;
+}
+
+
+
+
+/* Margins and PAddings! */
