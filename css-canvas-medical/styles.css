@@ -3,7 +3,8 @@
 }
 
 .navigation {
-  border-bottom: 1px solid black;
+  background-color: #fafafa;
+  border-bottom: 1px solid #E7E9EC;
 }
 
 .row {
@@ -36,15 +37,19 @@
 /* Hero */
 
 .hero {
-  text-emphasis: none;
+  margin: 4% 0;
 }
 
 .hero-background {
-  text-emphasis: none;
+  width: 100%;
+  opacity: 1.0;
 }
 
-.absolute {
-  text-emphasis: none;
+.hero-text {
+  position: absolute;
+  width: 55%;
+  padding: 6%;
+  line-height: 2rem;
 }
 
 /* clinicians */
@@ -55,17 +60,19 @@
 
 .clinicians-info {
   flex-basis: 100%;
+  margin: 3% 25%;
 }
 
 /* locations */
 
 .locations {
   background-color: #fafafa;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #E7E9EC;
 }
 
 .col-one-half {
   flex-basis: 50%;
+  margin: 3% 0;
 }
 
 /* ready */
@@ -86,11 +93,27 @@
 
 .about-us {
   background-color: #525351;
+  padding: 8% 0;
+  font-family: 'Avenir', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.col-one-fourth p {
+  line-height: 25px;
 }
 
 .vertical-link {
   display: flex;
   flex-flow: column;
+}
+
+.vertical-link a {
+  line-height: 35px;
+}
+.white-logo {
+  margin: 25px 0;
+  width: 60%;
 }
 
 /* footer  */
@@ -99,8 +122,8 @@
   display: flex;
 }
 
-.last-col-one-fifth {
-  flex-basis: calc(100% / 5);
+.last-col-one-fourth {
+  flex-basis: calc(100% / 4);
   padding: 50px 0;
   display: flex;
 }
@@ -109,3 +132,60 @@
 
 
 /* Margins and PAddings! */
+.white-text {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* fonts */
+
+.heading-text {
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.heading-italics {
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.regular-text {
+  font-family: 'Avenir', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.button-start {
+  background-color: #294464;
+  border: none;
+  padding: 20px 55px;
+  margin-top: 5%;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.grey-text {
+  color: #6E6E6E
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.button-contact {
+  background-color: #294464;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.blue-logo {
+  width: 60%;
+  margin: 15px
+}
