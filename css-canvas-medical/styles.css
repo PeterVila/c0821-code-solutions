@@ -53,6 +53,19 @@
   line-height: 2rem;
 }
 
+.overlay {
+  background-color: rgba(80, 79, 79, 0.4);
+  width: 90%;
+  height: 600px; 
+  position: absolute;
+}
+
+.hero-header {
+  font-size: 34px;
+  letter-spacing: 1.5px;
+  line-height: 2.5rem;
+}
+
 /* clinicians */
 
 .clinicians {
@@ -61,7 +74,8 @@
 
 .clinicians-info {
   flex-basis: 100%;
-  margin: 3% 25%;
+  margin: 2% 25%;
+  line-height: 1.8rem;
 }
 
 /* locations */
@@ -73,7 +87,8 @@
 
 .col-one-half {
   flex-basis: 50%;
-  margin: 3% 0;
+  margin: 3% 0 6% 0;
+  line-height: 1.5rem;
 }
 
 /* ready */
@@ -162,13 +177,14 @@ a {
   font-weight: 500;
 }
 
+/* Everything else */ 
 .button-start {
   background-color: #294464;
   border: none;
-  padding: 20px 55px;
+  padding: 18px 60px;
   margin-top: 5%;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 
 .grey-text {
@@ -191,9 +207,3 @@ a:visited {
   margin: 15px;
 }
 
-.overlay {
-  background-color: rgba(80, 79, 79, 0.4);
-  width: 90%;
-  height: 600px; 
-  position: absolute;
-}
