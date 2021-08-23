@@ -121,6 +121,8 @@
 
 .footer {
   display: flex;
+  background-color: #fafafa;
+
 }
 
 .last-col-one-fourth {
@@ -128,8 +130,6 @@
   padding: 50px 0;
   display: flex;
 }
-
-
 
 
 /* Margins and PAddings! */
@@ -192,8 +192,8 @@ a:visited {
 }
 
 .overlay {
-  background: linear-gradient(transparent, rgba(73, 73, 73, 0.8));
+  background-color: rgba(80, 79, 79, 0.4);
   width: 90%;
-  height: 600px; /* I dont understand why 59 works */
+  height: 600px; 
   position: absolute;
 }
