@@ -5,6 +5,12 @@
 .navigation {
   background-color: #fafafa;
   border-bottom: 1px solid #E7E9EC;
+  padding: 5px 0;
+}
+
+.blue-logo {
+  width: 65%;
+  margin: 15px;
 }
 
 .row {
@@ -34,15 +40,49 @@
   align-items: center;
 }
 
-/* Hero */
+
+.white-text {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
+.heading-text {
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.heading-italics {
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.regular-text {
+  font-family: 'Avenir', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px
+}
+
+.grey-text {
+  color: rgb(131, 131, 131)
+}
 
 .hero {
-  margin: 4% 0;
+  margin: 5% 0;
 }
 
 .hero-background {
   width: 100%;
-  opacity: 1.0;
   height: 600px;
 }
 
@@ -66,7 +106,14 @@
   line-height: 2.5rem;
 }
 
-/* clinicians */
+.button-start {
+  background-color: #294464;
+  border: none;
+  padding: 18px 60px;
+  margin-top: 5%;
+  border-radius: 5px;
+  font-size: 1.25rem;
+}
 
 .clinicians {
   background-color: #fafafa;
@@ -74,24 +121,21 @@
 
 .clinicians-info {
   flex-basis: 100%;
-  margin: 2% 25%;
+  margin: 5% 25% 3% 25%;
   line-height: 1.8rem;
 }
-
-/* locations */
 
 .locations {
   background-color: #fafafa;
   border-bottom: 1px solid #E7E9EC;
+  padding: 0% 0 2% 0
 }
 
 .col-one-half {
   flex-basis: 50%;
-  margin: 3% 0 6% 0;
+  margin: 3% 0 5% 0;
   line-height: 1.5rem;
 }
-
-/* ready */
 
 .ready {
   background-color: white;
@@ -105,18 +149,17 @@
   text-align: end;
 }
 
-/* about-us */
-
 .about-us {
   background-color: #525351;
-  padding: 8% 0;
+  padding: 10% 0;
   font-family: 'Avenir', sans-serif;
   font-style: normal;
   font-weight: 500;
 }
 
-.col-one-fourth p {
-  line-height: 25px;
+.about-us-one-half {
+    flex-basis: 50%;
+    line-height: 1.8rem;
 }
 
 .vertical-link {
@@ -125,14 +168,12 @@
 }
 
 .vertical-link a {
-  line-height: 35px;
+  line-height: 10px;
 }
 .white-logo {
   margin: 25px 0;
-  width: 60%;
+  width: 25%;
 }
-
-/* footer  */
 
 .footer {
   display: flex;
@@ -146,64 +187,12 @@
   display: flex;
 }
 
-
-/* Margins and PAddings! */
-.white-text {
-  color: white;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* fonts */
-
-.heading-text {
-  font-family: 'Tiempos Headline', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-}
-
-.heading-italics {
-  font-family: 'Tiempos Headline', sans-serif;
-  font-style: italic;
-  font-weight: 300;
-}
-
-.regular-text {
-  font-family: 'Avenir', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-}
-
-/* Everything else */ 
-.button-start {
-  background-color: #294464;
-  border: none;
-  padding: 18px 60px;
-  margin-top: 5%;
-  border-radius: 5px;
-  font-size: 1.15rem;
-}
-
-.grey-text {
-  color: rgb(131, 131, 131)
-}
-
-a:visited {
-  text-decoration: none;
-}
-
 .button-contact {
   background-color: #294464;
   border: none;
-  padding: 10px 15px;
+  padding: 15px 20px;
   border-radius: 5px;
 }
 
-.blue-logo {
-  width: 60%;
-  margin: 15px;
-}
+
 

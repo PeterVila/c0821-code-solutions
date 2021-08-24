@@ -114,6 +114,7 @@
   font-weight: 500;
 }
 
+
 .col-one-fourth p {
   line-height: 25px;
 }
@@ -220,4 +221,10 @@ a:visited {
 .col-one-half:nth-child(2) {
     margin: 10% 0 10% 5%;
     line-height: 1.4rem;
+}
+
+
+.about-us-one-half {
+    flex-basis: 50%;
+    display: flex;
 }
