@@ -3,7 +3,7 @@ var orderHistory = [
     date: 'August 4, 2020',
     total: 34.00,
     recipient: 'JS Masher',
-    orderNumber: 114 - 3941689 - 8772232,
+    orderNumber: '114-3941689-8772232',
     delivered: 'August 8, 2020',
     item: [{
       name: 'JavaScript for Impatient Programmers',
@@ -16,7 +16,7 @@ var orderHistory = [
     date: 'July 19, 2020',
     total: 44.53,
     recipient: 'JS Masher',
-    orderNumber: 113 - 9984268 - 1280257,
+    orderNumber: '113-9984268-1280257',
     delivered: 'July 20, 2020',
     item: [{
       name: 'The Timeless Way of Building',
@@ -29,7 +29,7 @@ var orderHistory = [
     date: 'July 7, 2020',
     total: 17.22,
     recipient: 'JS Masher',
-    orderNumber: 114 - 2875557 - 9059409,
+    orderNumber: '114-2875557-9059409',
     delivered: 'July 7, 2020',
     item: [{
       name: 'Gamecube Controller Adapter',
@@ -42,7 +42,7 @@ var orderHistory = [
     date: 'July 5, 2020',
     total: 138.93,
     recipient: 'JS Masher',
-    orderNumber: 113 - 2883177 - 2648248,
+    orderNumber: '113 - 2883177 - 2648248',
     delivered: 'July 5, 2020',
     item:
     [
