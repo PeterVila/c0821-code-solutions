@@ -43,7 +43,7 @@
 .hero-background {
   width: 100%;
   opacity: 1.0;
-  height: 600px;
+  height: 470px;
 }
 
 .hero-text {
@@ -56,38 +56,14 @@
 .overlay {
   background-color: rgba(80, 79, 79, 0.4);
   width: 90%;
-  height: 600px; 
+  height: 470px; 
   position: absolute;
 }
 
 .hero-header {
-  font-size: 34px;
+  font-size: 30px;
   letter-spacing: 1.5px;
   line-height: 2.5rem;
-}
-
-/* clinicians */
-
-.clinicians {
-  background-color: #fafafa;
-}
-
-.clinicians-info {
-  flex-basis: 100%;
-  margin: 2% 25%;
-  line-height: 1.8rem;
-}
-
-/* locations */
-
-.locations {
-  background-color: #fafafa;
-  border-bottom: 1px solid #E7E9EC;
-}
-
-.col-one-half {
-  flex-basis: 50%;
-  margin: 7% 0 6% 3%;
 }
 
 /* ready */
@@ -188,7 +164,7 @@ a {
 }
 
 .grey-text {
-  color: rgb(131, 131, 131)
+    color: rgb(92, 92, 92);
 }
 
 a:visited {
@@ -209,7 +185,7 @@ a:visited {
 
 /* Product css */
 
-.command {
+.grey-background {
     background-color: #fafafa;
 }
 
@@ -217,14 +193,29 @@ a:visited {
     font-style: italic;
 }
 
-
-.col-one-half:nth-child(2) {
-    margin: 10% 0 10% 5%;
-    line-height: 1.4rem;
+.col-one-half {
+  margin-top: 10%;
 }
 
 
-.about-us-one-half {
-    flex-basis: 50%;
-    display: flex;
+.col-text-right {
+    margin-left: 10%;
+    line-height: 1.4rem;
+}
+.col-text-left {
+    margin-right: 10%;
+    line-height: 1.4rem;
+}
+
+.col-img {
+  width: 450px;
+}
+
+.button-start {
+  background-color: #294464;
+  border: none;
+  padding: 18px 60px;
+  margin-top: 5%;
+  border-radius: 5px;
+  font-size: 1.25rem;
 }
