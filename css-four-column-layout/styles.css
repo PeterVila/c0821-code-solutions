@@ -2,16 +2,46 @@
   box-sizing: border-box;
 }
 
+body {
+  background: #f7f8fa;
+  font-family: 'Barlow', sans-serif;
+}
+
 .header {
   text-align: center;
 }
 
 .row {
   display: flex;
-  width: 100%;
-  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .col-one-fourth {
   flex-basis: 25%;
+}
+
+.col-one-fourth img:nth-child(1) {
+  height: 70%;
+}
+
+.col-one-fourth img:nth-child(2) {
+  width: 25%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.barlow {
+  font-family: 'Barlow', sans-serif;
+}
+
+p {
+  font-size: 1.3rem;
+  margin-top: 10%;
+}
+
+h1 {
+  font-size: 3rem;
 }
