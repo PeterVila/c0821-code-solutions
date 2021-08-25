@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+}
+
+.title {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-size: 45px;
+  font-weight: 900;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.col-one-fifth {
+  flex-basis: 20%;
+  margin: 0 12px;
+}
+
+.col-one-fifth img {
+  height: 550px;
+}
+
+.description {
+  display: flex;
+}
+
+.description-text {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.description-margin {
+  margin-right: 5px;
+}
+
+.grey-text {
+  color: #dedede;
+}
+
+.price {
+  display: flex;
+}
+
+.price-font {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.sales-price {
+  background-color: #fef2e7;
+}
