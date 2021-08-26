@@ -26,3 +26,7 @@ img {
 .column-two-thirds {
   width: calc((2 / 3) * 100%);
 }
+
+button {
+  background-color:#294464;
+}
