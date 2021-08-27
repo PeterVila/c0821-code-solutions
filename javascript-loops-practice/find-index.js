@@ -5,9 +5,5 @@ function findIndex(array, value) {
       return i;
     }
   }
-  for (var j = 0; j < array.length; j++) {
-    if (array[j] !== value) {
-      return -1;
-    }
-  }
+  return -1;
 }
