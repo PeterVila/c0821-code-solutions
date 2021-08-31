@@ -1,8 +1,6 @@
 /* exported head */
 
 function head(array) {
-  var firstArr = [];
-  firstArr.push(array[0]);
   return array[0];
 }
 
