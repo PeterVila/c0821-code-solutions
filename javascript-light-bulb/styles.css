@@ -1,0 +1,38 @@
+
+* {
+  box-sizing: content-box;
+}
+
+.background-color-off {
+  background-color: #111;
+}
+
+.background-color-on {
+  background-color: #fef9f1;
+}
+
+.row {
+  display: flex;
+  height: 100vh;
+}
+
+.center {
+  justify-content: center;
+}
+
+.light-bulb-off {
+  width: 200px;
+  height: 200px;
+  background-color: #252525;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.light-bulb-on {
+  width: 200px;
+  height: 200px;
+  background-color: #faea84;
+  border-radius: 50%;
+  align-self: center;
+  box-shadow: 0 -2px 249px 10px rgba(250, 234, 132, 0.75);
+}
