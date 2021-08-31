@@ -1,0 +1,30 @@
+
+.my-font {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 30px;
+}
+
+.row {
+  display: flex;
+}
+
+.center-height {
+  justify-content: center;
+  height: 100vh;
+}
+
+.text {
+  align-self: center;
+}
+
+.green-text {
+  color: chartreuse;
+}
+
+.wrong-text {
+  color: red;
+}
+
+.under-line {
+  text-decoration: underline;
+}
