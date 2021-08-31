@@ -3,14 +3,14 @@ var $body = document.querySelector('.background-color-off');
 var $lightBulb = document.querySelector('.light-bulb-off');
 
 $lightBulb.addEventListener('click', function () {
-  if (off === false) {
-    off = true;
-    $lightBulb.className = 'light-bulb-off';
-    $body.className = 'background-color-off';
-  } else {
+  if (off) {
     off = false;
     $lightBulb.className = 'light-bulb-on';
     $body.className = 'background-color-on';
+  } else {
+    off = true;
+    $lightBulb.className = 'light-bulb-off';
+    $body.className = 'background-color-off';
   }
 });
 
