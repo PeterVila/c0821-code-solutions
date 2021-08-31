@@ -2,23 +2,42 @@ var value = 0;
 var attempts = 0;
 var $text = document.querySelectorAll('span');
 var $score = document.querySelector('p');
+var $retry = document.querySelector('button');
+var $modal = document.querySelector('.modal');
+var $modalText = document.querySelector('.modal-text');
+var $background = document.querySelector('body');
+var $opacity = document.querySelector('.text');
+var $retry2 = document.querySelector('.retry2');
 
+var test = true;
 document.addEventListener('keydown', function (e) {
   if (e.key === $text[value].innerText) {
     $text[value].className = 'green-text';
     attempts++;
     value++;
-    $score.innerHTML = 'Score: ' + value + '/27';
+    $score.textContent = 'Score: ' + value + '/27';
     if (value === 27) {
-      alert('Your typing % is: ' + Math.round(27 / attempts * 100) + ' %');
+      $modal.className = 'modal';
+      $background.className = 'background-color-off';
+      $opacity.className = 'opacity text';
+      $modalText.textContent = Math.round(value / attempts * 100) + '% with ' + (attempts - value) + ' errors.';
+      $retry2.addEventListener('click', function () {
+        if (test === true) {
+          location.reload();
+        }
+      });
     }
   } else {
     $text[value].className = 'wrong-text under-line';
     attempts++;
   }
 
-  $text[value + 1].className = 'underline';
+});
 
+$retry.addEventListener('click', function () {
+  if (test === true) {
+    location.reload();
+  }
 });
 
 /*
