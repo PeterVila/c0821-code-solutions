@@ -38,4 +38,5 @@ function formSubmit(event) {
     message: $form.elements.message.value
   };
   console.log(values);
+  $form.reset();
 }
