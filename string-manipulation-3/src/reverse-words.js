@@ -19,12 +19,12 @@ function reverseWords(string){
     for (var x = currentWord.length-1; x >= 0; x--){
         output += currentWord[x];
     }
-    console.log(output);
+    // console.log(output);
     
     for (var x = 1; x < string.length + 1; x++){
         outputWithoutSpace += output[x]
     }
-    console.log(outputWithoutSpace)
+    // console.log(outputWithoutSpace)
     return outputWithoutSpace
 }
 
