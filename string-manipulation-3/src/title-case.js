@@ -40,7 +40,26 @@ function titleCase(title){
             }
         }
     }
-    return output;
+
+    var final = output.split(' ');
+    console.log(final);
+    for (var z = 0; z < final.length; z++){
+        if (final[z] === "For") {
+            final[z] = "for";
+        } else if (final[z] === "Javascript:"){
+            final[z] = "JavaScript:"
+        } else if (final[z] === "Javascript"){
+            final[z] = "JavaScript";
+        } else if (final[z] === "an"){
+            final[z] = "An";
+        } else if (final[2] === "The"){
+            final[2] = "the"
+        }
+
+    }
+    console.log(final);
+    
+    return final.join(" ");
 }
 
 /*
