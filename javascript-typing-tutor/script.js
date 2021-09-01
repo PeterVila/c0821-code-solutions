@@ -9,8 +9,11 @@ var $background = document.querySelector('body');
 var $opacity = document.querySelector('.text');
 var $retry2 = document.querySelector('.retry2');
 
-var test = true;
-document.addEventListener('keydown', function (e) {
+document.addEventListener('keydown', keyDown);
+$retry.addEventListener('click', retryButton);
+$retry2.addEventListener('click', modalRetry);
+
+function keyDown(e) {
   if (e.key === $text[value].innerText) {
     $text[value].className = 'green-text';
     attempts++;
@@ -21,24 +24,38 @@ document.addEventListener('keydown', function (e) {
       $background.className = 'background-color-off';
       $opacity.className = 'opacity text';
       $modalText.textContent = Math.round(value / attempts * 100) + '% with ' + (attempts - value) + ' errors.';
-      $retry2.addEventListener('click', function () {
-        if (test === true) {
-          location.reload();
-        }
-      });
     }
   } else {
     $text[value].className = 'wrong-text under-line';
     attempts++;
   }
+}
 
-});
+function modalRetry(e) {
+  if (e) {
+    value = 0;
+    attempts = 0;
+    $modal.className = 'modal hidden';
+    $background.className = '';
+    $opacity.className = 'text';
+    for (var i = 0; i < $text.length; i++) {
+      $text[i].className = 'text';
+    }
+    $score.textContent = 'Score: ' + value + '/27';
 
-$retry.addEventListener('click', function () {
-  if (test === true) {
-    location.reload();
   }
-});
+}
+function retryButton(e) {
+  if (e) {
+    value = 0;
+    attempts = 0;
+    for (var i = 0; i < $text.length; i++) {
+      $text[i].className = 'text';
+    }
+    $score.textContent = 'Score: ' + value + '/27';
+
+  }
+}
 
 /*
 Make a container for value(this will indicate which key we are on)
