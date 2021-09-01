@@ -1,0 +1,53 @@
+* {
+  box-sizing: content-box;
+}
+
+.blue-button {
+  color: white;
+  font-size: 30px;
+  background-color: #008cba;
+  border: none;
+  padding: 30px 50px;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px darkgray;
+}
+
+.modal {
+  display: flex;
+  height: 60vh;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-box {
+  border-radius: 30px;
+  padding: 30px;
+  background-color: white;
+  align-self: center;
+  text-align: center;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.red-button {
+  color: white;
+  font-size: 25px;
+  background-color: red;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px darkgray;
+  margin: 30px;
+}
+
+.background-dim {
+  background-color: rgba(0, 0, 0, 0.208);
+}
+
+.background-default {
+  background-color: white;
+}
