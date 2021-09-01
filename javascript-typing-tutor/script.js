@@ -32,29 +32,23 @@ function keyDown(e) {
 }
 
 function modalRetry(e) {
-  if (e) {
-    value = 0;
-    attempts = 0;
-    $modal.className = 'modal hidden';
-    $background.className = '';
-    $opacity.className = 'text';
-    for (var i = 0; i < $text.length; i++) {
-      $text[i].className = 'text';
-    }
-    $score.textContent = 'Score: ' + value + '/27';
-
+  value = 0;
+  attempts = 0;
+  $modal.className = 'modal hidden';
+  $background.className = '';
+  $opacity.className = 'text';
+  for (var i = 0; i < $text.length; i++) {
+    $text[i].className = 'text';
   }
+  $score.textContent = 'Score: ' + value + '/27';
 }
 function retryButton(e) {
-  if (e) {
-    value = 0;
-    attempts = 0;
-    for (var i = 0; i < $text.length; i++) {
-      $text[i].className = 'text';
-    }
-    $score.textContent = 'Score: ' + value + '/27';
-
+  value = 0;
+  attempts = 0;
+  for (var i = 0; i < $text.length; i++) {
+    $text[i].className = 'text';
   }
+  $score.textContent = 'Score: ' + value + '/27';
 }
 
 /*
