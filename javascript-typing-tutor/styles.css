@@ -1,0 +1,78 @@
+
+.my-font {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 30px;
+}
+
+.row {
+  display: flex;
+}
+
+.center-height {
+  justify-content: center;
+  height: 100vh;
+}
+
+.text {
+  align-self: center;
+}
+
+.green-text {
+  color: chartreuse;
+}
+
+.black-text {
+  color: black;
+}
+
+.wrong-text {
+  color: red;
+}
+
+.under-line {
+  text-decoration: underline;
+}
+
+.retry {
+  text-align: center;
+}
+
+.retry-button {
+  padding: 20px 40px;
+  border: none;
+  border-radius: 20px;
+  font-size: 25px;
+  background-color: red;
+  color: white;
+}
+
+.text .retry-button {
+  margin-top: 30px;
+}
+
+.modal {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+
+.box {
+  width: 500px;
+  height: 200px;
+  background-color: white;
+  text-align: center;
+  padding-top: 10%;
+  border-radius: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.background-color-off {
+  background-color: rgba(17, 17, 17, 0.858);
+}
+
+.opacity {
+  opacity: 50%;
+}
