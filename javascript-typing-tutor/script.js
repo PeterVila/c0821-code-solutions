@@ -2,17 +2,17 @@ var value = 0;
 var attempts = 0;
 var $text = document.querySelectorAll('span');
 var $score = document.querySelector('p');
-var $retry = document.querySelector('button');
+var $retry = document.querySelectorAll('button');
 var $modal = document.querySelector('.modal');
 var $modalText = document.querySelector('.modal-text');
 var $background = document.querySelector('body');
 var $opacity = document.querySelector('.text');
-var $retry2 = document.querySelector('.retry2');
 
 document.addEventListener('keydown', keyDown);
-$retry.addEventListener('click', retryButton);
-$retry2.addEventListener('click', modalRetry);
+for (var x = 0; x < $retry.length; x++) {
+  $retry[x].addEventListener('click', modalRetry);
 
+}
 function keyDown(e) {
   if (e.key === $text[value].innerText) {
     $text[value].className = 'green-text';
@@ -37,14 +37,6 @@ function modalRetry(e) {
   $modal.className = 'modal hidden';
   $background.className = '';
   $opacity.className = 'text';
-  for (var i = 0; i < $text.length; i++) {
-    $text[i].className = 'text';
-  }
-  $score.textContent = 'Score: ' + value + '/27';
-}
-function retryButton(e) {
-  value = 0;
-  attempts = 0;
   for (var i = 0; i < $text.length; i++) {
     $text[i].className = 'text';
   }
