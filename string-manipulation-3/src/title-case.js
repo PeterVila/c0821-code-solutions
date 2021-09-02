@@ -1,19 +1,35 @@
 /* exported titleCase */
-function titleCase(title){
+function titleCase(title) {
     var titleLower = title.toLowerCase();
 
     var currentWord = title[0].toUpperCase();
     var output = ''
 
-    for (var i = 1; i < titleLower.length; i++){
-        if (titleLower[i] === " " || i === titleLower.length -1){
+    for (var i = 1; i < titleLower.length; i++) {
+        if (titleLower[i] === " " || i === titleLower.length - 1) {
             currentWord += titleLower[i]
-            if (currentWord === 'javascript') {
+            console.log(currentWord);
+            if (currentWord === 'javascript ') {
                 output += 'JavaScript ';
                 currentWord = '';
-            } else if (currentWord.length >= 4){
+            } else if (currentWord === "Javascript: The ") {
+                output += "JavaScript: The ";
+                currentWord = "";
+            } else if (currentWord === "javascript: An ") {
+                output += "JavaScript: An "
+                currentWord = ""
+            } else if (currentWord === "for ") {
+                output += "for ";
+                currentWord = ""
+            } else if (currentWord === "the ") {
+                output += "the "
+                currentWord = ""
+            } else if (currentWord === "An ") {
+                output += "An "
+                currentWord = ""
+            } else if (currentWord.length >= 4) {
                 output += currentWord[0].toUpperCase(0);
-                for (var j = 1; j < currentWord.length; j++){
+                for (var j = 1; j < currentWord.length; j++) {
                     output += currentWord[j]
                 }
                 currentWord = ''
@@ -24,42 +40,23 @@ function titleCase(title){
                 output += currentWord.toLowerCase();
                 currentWord = '';
             }
-        } else if (titleLower[i] === "-"){
+        } else if (titleLower[i] === "-") {
             currentWord += titleLower[i];
-            currentWord += titleLower[i+1].toUpperCase();
+            currentWord += titleLower[i + 1].toUpperCase();
             i++;
-        } else if (titleLower[i] === ":"){
+        } else if (titleLower[i] === ":") {
             currentWord += titleLower[i];
             currentWord += " "
-            currentWord += titleLower[i+2].toUpperCase();
+            currentWord += titleLower[i + 2].toUpperCase();
             i += 2;
         } else {
             currentWord += titleLower[i].toLowerCase();
-            if (i === titleLower.length){
+            if (i === titleLower.length) {
                 output += currentWord;
             }
         }
     }
-
-    var final = output.split(' ');
-    console.log(final);
-    for (var z = 0; z < final.length; z++){
-        if (final[z] === "For") {
-            final[z] = "for";
-        } else if (final[z] === "Javascript:"){
-            final[z] = "JavaScript:"
-        } else if (final[z] === "Javascript"){
-            final[z] = "JavaScript";
-        } else if (final[z] === "an"){
-            final[z] = "An";
-        } else if (final[2] === "The"){
-            final[2] = "the"
-        }
-
-    }
-    console.log(final);
-    
-    return final.join(" ");
+    return output;
 }
 
 /*
@@ -68,7 +65,7 @@ Output: The original title but with "APA Title Case Style" applied
 
 Make a container containing curentWord.
 Go through every character (after the first) of the titleString; ex)professional JavaScript for web developers
-    If the character is a space (" "); 
+    If the character is a space (" ");
         Add string[i] to currentWord,
         if (currentWord === 'javascript')
             Add currentWord to output.
