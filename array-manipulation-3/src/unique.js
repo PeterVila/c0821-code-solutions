@@ -1,23 +1,19 @@
 /* exported unique */
 function unique(array){
     var obj = {}
-    var arrCheck = [];
-    var output = [];
-    for (var key in array){
-        obj[array[key]] = key
-    }
-    for (var check in obj){
-        if (check === "false"){
-            arrCheck.push(false)
-        } else if (check === "true"){
-            arrCheck.push(true)
-        } else {
-            arrCheck.push(check);
-
-        }
+    var output = []
+    for (var i = 0; i <array.length; i++){
+        obj[array[i]] = array[i]
     }
     console.log(obj)
-    console.log(arrCheck);
-
-    
+    for (var x = 0; x < array.length; x++){
+        for (var key in obj){
+            if (obj[key] === array[x]){
+                output.push(array[x])
+                x++;
+                delete obj[key]
+            }
+        }
+    }
+    return output;
 }
