@@ -5,7 +5,6 @@ var $viewList = document.querySelectorAll('.view');
 $tabContainer.addEventListener('click', tabSwitch);
 
 function tabSwitch() {
-
   if (event.target.matches('.tab')) {
     for (var i = 0; i < $tabList.length; i++) {
       if ($tabList[i] === event.target) {
@@ -14,9 +13,7 @@ function tabSwitch() {
         $tabList[i].className = 'tab';
       }
     }
-  }
 
-  if (event.target) {
     var attr = event.target.getAttribute('data-view');
     for (var x = 0; x < $viewList.length; x++) {
       if ($viewList[x].getAttribute('data-view') === attr) {
