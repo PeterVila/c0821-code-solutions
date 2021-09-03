@@ -2,7 +2,7 @@ console.log('Lodash is loaded:', typeof _ !== 'undefined');
 
 var players = [
     {
-        "name": "player1",
+   "name": "player1",
         "hand": []
     },
     {
@@ -18,7 +18,6 @@ var players = [
         "hand": []
     },
 ]
-
 var deck = [
     {"rank":"Ace", "suit":"clubs"},
     {"rank":"2", "suit":"clubs"},
@@ -74,11 +73,32 @@ var deck = [
     { "rank": "King", "suit": "spades" }  
 ]
 console.log(deck);
+var shuffledDeck = _.shuffle(deck);
+console.log(shuffledDeck);
+// Add two cards to each players hands ._random()
+// function getRandomCard(min, max) {
+//     return Math.ceil(Math.random() * (max - min) + min);
+// }
+// var randomNumber = getRandomCard(0,52);
+// console.log(randomNumber);
+var card1;
+var card2;
+for(var i = 0; i < players.length; i++){
+        card1 = _.random(0,52)
+        players[i].hand.push(shuffledDeck[card1]);
+        
+    }
+
+console.log(players);
+
 /*
 1. Create an array of 4 objects
     -Unique names and hands for each
 2. Create a collection of 52 objects representing card-deck
     -Each should have a rank (Ace,2,...) and suit (clubs, spades)
+3.Shuffled Deck
+4. Deal 2 cards to each player
+    -Remove the object property and give 2 to each player
 
 https://lodash.com/docs/4.17.15#shuffle
 */
