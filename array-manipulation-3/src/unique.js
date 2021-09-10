@@ -6,11 +6,9 @@ function unique(array) {
     obj[array[i]] = array[i];
   }
   for (var x = 0; x < array.length; x++) {
-    for (var key in obj) {
-      if (obj[key] === array[x]) {
-        output.push(array[x]);
-        delete obj[key];
-      }
+    if (obj[array[x]] === array[x]) {
+      output.push(array[x]);
+      delete obj[array[x]];
     }
   }
   return output;

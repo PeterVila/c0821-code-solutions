@@ -5,11 +5,15 @@ function intersection(first, second) {
     for (var x = 0; x < second.length; x++) {
       if (first[i] === second[x]) {
         output.push(first[i]);
+        continue;
       }
     }
   }
   return output;
 }
+
+// Continueing to find multiple same values.
+// console.log(intersection([2,1], [2,3,2,1,1]))
 
 /*
 Input: Takes in 2 lists
