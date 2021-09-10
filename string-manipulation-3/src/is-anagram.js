@@ -1,35 +1,28 @@
 /* exported isAnagram */
-function isAnagram(firstString, secondString){
-    var noSpaceFirst = [];
-    var noSpaceSecond = [];
-    
-    for (var i = 0; i < firstString.length; i++){
-        if (firstString[i] !== " "){
-            noSpaceFirst.push(firstString[i]);
-        }
+function isAnagram(firstString, secondString) {
+  var noSpaceFirst = [];
+  var noSpaceSecond = [];
+  for (var i = 0; i < firstString.length; i++) {
+    if (firstString[i] !== ' ') {
+      noSpaceFirst.push(firstString[i]);
     }
-    noSpaceFirst.sort();
-    // console.log(noSpaceFirst)
-    for (var j = 0; j < secondString.length; j++) {
-        if (secondString[j] !== " ") {
-            noSpaceSecond.push(secondString[j]);
-        }
+  }
+  noSpaceFirst.sort();
+  for (var j = 0; j < secondString.length; j++) {
+    if (secondString[j] !== ' ') {
+      noSpaceSecond.push(secondString[j]);
     }
-    noSpaceSecond.sort();
-    // console.log(noSpaceSecond);
-
-    for(var x = 0; x < noSpaceFirst.length; x++){
-        if(noSpaceFirst[x] !== noSpaceSecond[x]){
-            return false;
-        } 
+  }
+  noSpaceSecond.sort();
+  for (var x = 0; x < noSpaceFirst.length; x++) {
+    if (noSpaceFirst[x] !== noSpaceSecond[x]) {
+      return false;
     }
-    return true;
+  }
+  return true;
 }
-
-
-
 /* Parameters
-Input: firstString - any JavaScript String 
+Input: firstString - any JavaScript String
        secondString - any JavaScript String
 Ouput: A Boolean indicating whether or not secondString is an anagram of firstString.
 

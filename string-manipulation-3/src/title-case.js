@@ -1,91 +1,63 @@
 /* exported titleCase */
-function titleCase(title){
-    var titleLower = title.toLowerCase();
-
-    var currentWord = title[0].toUpperCase();
-    var output = ''
-
-    for (var i = 1; i < titleLower.length; i++){
-        if (titleLower[i] === " " || i === titleLower.length -1){
-            currentWord += titleLower[i]
-            if (currentWord === 'javascript') {
-                output += 'JavaScript ';
-                currentWord = '';
-            } else if (currentWord.length >= 4){
-                output += currentWord[0].toUpperCase(0);
-                for (var j = 1; j < currentWord.length; j++){
-                    output += currentWord[j]
-                }
-                currentWord = ''
-            } else if (currentWord === 'api') {
-                output += 'API'
-                currentWord = '';
-            } else {
-                output += currentWord.toLowerCase();
-                currentWord = '';
-            }
-        } else if (titleLower[i] === "-"){
-            currentWord += titleLower[i];
-            currentWord += titleLower[i+1].toUpperCase();
-            i++;
-        } else if (titleLower[i] === ":"){
-            currentWord += titleLower[i];
-            currentWord += " "
-            currentWord += titleLower[i+2].toUpperCase();
-            i += 2;
-        } else {
-            currentWord += titleLower[i].toLowerCase();
-            if (i === titleLower.length){
-                output += currentWord;
-            }
-        }
+function titleCase(title) {
+  var arr = title.toLowerCase().split(' ');
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] === 'javascript') {
+      arr[i] = 'JavaScript';
+    } else if (arr[i] === 'javascript:') {
+      arr[i] = 'JavaScript:';
+    } else if (arr[i] === 'api') {
+      arr[i] = 'API';
+    } else if (arr[i] === 'web') {
+      arr[i] = 'Web';
+    } else if (arr[i].length >= 4) {
+      arr[i] = arr[i][0].toUpperCase() + arr[i].substr(1);
+    } else if (i === 0) {
+      arr[i] = arr[i][0].toUpperCase() + arr[i].substr(1);
     }
-
-    var final = output.split(' ');
-    console.log(final);
-    for (var z = 0; z < final.length; z++){
-        if (final[z] === "For") {
-            final[z] = "for";
-        } else if (final[z] === "Javascript:"){
-            final[z] = "JavaScript:"
-        } else if (final[z] === "Javascript"){
-            final[z] = "JavaScript";
-        } else if (final[z] === "an"){
-            final[z] = "An";
-        } else if (final[2] === "The"){
-            final[2] = "the"
-        }
-
+  }
+  var output = arr.join(' ');
+  var currentWord = '';
+  var finish = '';
+  for (var z = 0; z < output.length; z++) {
+    if (output[z] === ' ' || z === output.length) {
+      finish += currentWord;
+      currentWord = '';
     }
-    console.log(final);
-    
-    return final.join(" ");
+    if (output[z] === ':') {
+      finish += currentWord;
+      finish += ': ' + output[z + 2].toUpperCase();
+      currentWord = '';
+      z += 3;
+    }
+    if (output[z] === '-') {
+      finish += currentWord + '-';
+      finish += output[z + 1].toUpperCase();
+      currentWord = '';
+      z += 2;
+    }
+    currentWord += output[z];
+    if (z === output.length - 1) {
+      finish += currentWord;
+    }
+  }
+  return finish;
 }
-
 /*
 Input: a string representing a book Title
 Output: The original title but with "APA Title Case Style" applied
 
-Make a container containing curentWord.
-Go through every character (after the first) of the titleString; ex)professional JavaScript for web developers
-    If the character is a space (" "); 
-        Add string[i] to currentWord,
-        if (currentWord === 'javascript')
-            Add currentWord to output.
-            increase i by 10
-            empty currentWord
-        else if (currentWord.length >= 4){
-            Add currentWord[0] to output
-            Go through rest of character and add
-        }
-        else if (currentWord === 'api') {
-            Add currentWord to output
-            Increase i to 3
-            reset currentWord
-        }
-        go through every character of currentWord;
-            -
-        concatenate output += currentWord;
-    else, add the character to currentWord
-
+Split every word into an array (lowerCased)
+Find special cases for words at each array value and turn that array into capitalized case.
+    Other cases include the first word of the title and words that are larger than 4 and make those capitalized
+Join the sentence together back to normal with regular spaces in between.
+Create a variable for currentWord
+Create a variable for the finished output
+    If there is a space, have special cases
+        If colons, output but uppercase the letter 2 spaces after
+        If -, uppercase the letter ater and increase iteration
+    Nothing applies so add current character to currentWord
+    Create a condtion for word at the very end
+        Output the currentWord to our final string.
+Return word.
 */
