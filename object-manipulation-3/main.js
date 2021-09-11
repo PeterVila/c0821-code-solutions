@@ -30,7 +30,6 @@ function cardGame(playerList, cardsPerHand) {
       players[z].hand.push(shuffledDeck.pop());
     }
     for (var p = 0; p < players[z].hand.length; p++) {
-      console.log(players[z].hand[p].rank);
       if (players[z].hand[p].rank === 'Ace') {
         players[z].score += 11;
       } else if (players[z].hand[p].rank === 'King' || players[z].hand[p].rank === 'Queen' || players[z].hand[p].rank === 'Jack') {
@@ -40,20 +39,15 @@ function cardGame(playerList, cardsPerHand) {
       }
     }
   }
-  console.log(players);
-  console.log(shuffledDeck);
 
   // TIE BREAKER
   // Populate a new array
-  console.log(players[0].score, players[1].score);
 
   var tieBreaker = [];
   for (var g = 0; g < players.length; g++) {
     tieBreaker.push(players[g].score);
   }
-  console.log(tieBreaker);
   var highestValue = Math.max(...tieBreaker);
-  console.log(highestValue);
 
   for (var e = 0; e < players.length; e++) {
     if (players[e].score === highestValue) {
