@@ -4,8 +4,14 @@ function intersection(first, second) {
   for (var i = 0; i < first.length; i++) {
     for (var x = 0; x < second.length; x++) {
       if (first[i] === second[x]) {
-        output.push(first[i]);
-        continue;
+        for (var z = 0; z < output.length; z++) {
+          if (first[x] === output[z]) {
+            i++;
+          }
+        }
+        if (first[i] !== undefined) {
+          output.push(first[i]);
+        }
       }
     }
   }
