@@ -1,0 +1,56 @@
+.container {
+    width: 1300px;
+    height: 800px;
+    border: 10px solid black;
+    margin-top: 2rem;
+}
+
+.row {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.leftArrow, 
+.rightArrow {
+    width: 20%;
+    height: 100%;
+    margin-top: 20rem;
+}
+
+
+i:hover {
+    color: skyblue;
+    cursor: pointer;
+}
+
+.middleColumn {
+    width: 80%;
+    height: 100%;
+}
+
+.pokemon {
+    width: 100%;
+    height: 80%;
+}
+
+.circleButtons {
+    height: 20%;
+}
+
+i {
+    font-size: 5rem;
+}
+
+.circleButtons i {
+    font-size: 2rem;
+    margin: 3rem 5px;
+}
+
+img {
+    margin-top: 4rem;
+    width: 800px;
+    height: 600px;
+}
