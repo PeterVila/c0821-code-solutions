@@ -26,6 +26,8 @@ function setImg() {
   $image.setAttribute('src', photos[position]);
   clearInterval(interval);
   interval = setInterval(nextSlide, 3000);
+  otherDots();
+  $dots[position].className = 'fas fa-circle';
 }
 
 function addPosition() {
@@ -42,13 +44,18 @@ function minusPosition() {
   }
 }
 
-//Query for all balls
-//event-target
+var $dots = document.querySelectorAll('.fa-circle');
+for (var i = 0; i < $dots.length; i++) {
+  $dots[i].addEventListener('click', function () {
+    position = event.target.getAttribute(['data-view']);
+    setImg();
+    otherDots();
+    $dots[position].className = 'fas fa-circle';
+  });
+}
 
-$balls = document.querySelectorAll('.fa-circle')
-
-for (var i = 0; i < $balls.length; i++){
-  $balls[i].addEventListener('click', function () {
-    position = $balls[i].getAttribute('data-view')
-  })
+function otherDots() {
+  for (var z = 0; z < $dots.length; z++) {
+    $dots[z].className = 'far fa-circle';
+  }
 }
