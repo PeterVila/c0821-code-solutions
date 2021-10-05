@@ -1,0 +1,405 @@
+    1  exit
+    2  whoami
+    3  git config --global user.name "Peter Vila"
+    4  git config --global user.email "peterdvila@gmail.com"
+    5  git config --global --list
+    6  exit
+    7  cd repos/driving-game/
+    8  git status
+    9  git add index.html 
+   10  git commit -m "added alt to image"
+   11  git push origin see-car
+   12  git remote -v
+   13  ls ~/.ssh
+   14  cat ~/.ssh/github_rsa.pub
+   15  git config --global --list
+   16  git push origin see-car
+   17  git status
+   18  git add . 
+   19  git commit -m "Finished issue 1 of see-car"
+   20  git add .
+   21  git commit -m "Finished issue 1 of see-car"
+   22  git push origin see-car
+   23  git switch master
+   24  git pull origin master
+   25  git branch turn-car
+   26  git branch --list
+   27  git switch turn-car
+   28  git status
+   29  git add .
+   30  git status
+   31  git add .
+   32  git commit -m "Added turning functionality for user"
+   33  git commit -m "Added turning functionality for user" --no-verify
+   34  git push origin turn-car
+   35  git switch master
+   36  git pull origin master
+   37  git branch start-car
+   38  git switch start-car
+   39  git status
+   40  git add .
+   41  git commit -m "Added functionality to car" --no-verify
+   42  git switch master
+   43  fish
+   44  ls 
+   45  cd
+   46  cd repos
+   47  ls
+   48  cd c0821-code-solutions
+   49  ls
+   50  cd javascript-carousel
+   51  git branch javascript-carousel
+   52  git switch javascript-carousel
+   53  git status
+   54  git add .
+   55  git commit -m "Used a loop instead of manually adding an event listener to each dot"
+   56  git push origin javascript-carousel
+   57  git switch master
+   58  ls
+   59  cd repos
+   60  ls
+   61  cd ajax-project
+   62  git status
+   63  git add .
+   64  git commit -m "Fixed relative URL" --no-verify
+   65  git push origin master
+   66  ls
+   67  cd repos
+   68  ls
+   69  cd whos-that-pokemon
+   70  ls
+   71  git status
+   72  git commit -m "Fixed mobile logo sizing" --no-verif
+   73  git commit -m "Fixed mobile logo sizing" --no-verify
+   74  git push origin master
+   75  git status
+   76  git add .
+   77  git commit -m "Removed duplicate classes" --no-verify
+   78  git push origin master
+   79  git status
+   80  git add .
+   81  git commit -m "Removed white button classessince no use" --no-verify
+   82  git push origin master
+   83  git status
+   84  git add .
+   85  git commit -m "Removed wiggle from buttons being too big" --no-verify
+   86  git push origin master
+   87  ls
+   88  cd repos
+   89  ls
+   90  cd whos-that-pokemon
+   91  git branch user-can-review
+   92  git switch user-can-review
+   93  git status
+   94  git add .
+   95  git commit -m "User can now click on old quiz pokemon sprites to automatically search them in the pokedex" --no-verify
+   96  git status
+   97  git add .
+   98  git commit -m "Added instructionons so user knows they can click on each pokemon sprite" --no-verify
+   99  git push origin user-can-review
+  100  git status
+  101  git commit -m "Code clean-up and prevent overflow of content" --no-verify
+  102  git add .
+  103  git commit -m "Code clean-up and prevent overflow of content" --no-verify
+  104  git push origin user-can-review
+  105  npm ci
+  106  git status
+  107  git add .
+  108  git commit -m "User pokedex entries now fully delete, code clean-up" --no-verify
+  109  git push origin user-can-review
+  110  git status
+  111  git add .
+  112  git commit -m "Fixed sizing" --no-verify
+  113  git push origin user-can-review
+  114  git status
+  115  git add .
+  116  git commit -m "Fixed font-sizings" --no-verify
+  117  git push origin user-can-review
+  118  git status
+  119  git add .
+  120  git commit -m "Removed all eslint errors"
+  121  git push origin user-can-review
+  122  git switch master
+  123  git pull origin master
+  124  git status
+  125  git add.
+  126  git add .
+  127  git commit -m "Pokedex spacing issue fixed on mobile" --no-verify
+  128  git push origin master
+  129  ls
+  130  cd repos
+  131  ls
+  132  cd ajax-project
+  133  git remote set-url origin git@github.com:PeterVila/ajax-project.git
+  134  git remote set-url origin <git@github.com:PeterVila/ajax-project.git>
+  135  ls
+  136  cd
+  137  cd repos
+  138  ls
+  139  my ajax-project whos-that-pokemon
+  140  mv ajax-project whos-that-pokemon
+  141  ls
+  142  git status
+  143  cd whos-that-pokemon
+  144  ls
+  145  git status
+  146  git remote set-url origin <paste the url without any angle brackets>
+  147  git remote set-url origin git@github.com:PeterVila/ajax-project.git
+  148  cd ~/repos
+  149  mv whos-that-pokemon whos-that-pokemon
+  150  ls
+  151  cd whos-that-pokemon
+  152  ls
+  153  git branch meta
+  154  git branch --list
+  155  git switch meta
+  156  git status
+  157  git add .
+  158  git commit -m "Added Open Graph meta tags to project" --no-verify
+  159  git push origin meta
+  160  git status
+  161  git add .
+  162  git commit -m "Different image for meta property og:url" --no-verify
+  163  git push origin meta
+  164  git switch master
+  165  git pull origin master
+  166  git branch --list
+  167  git branch code-cleanup
+  168  git switch code-cleanup
+  169  git status
+  170  git add .
+  171  git commit -m "Code clean-up on every file, removed images that won't be needed anymore" --no-verify
+  172  git push origin code-cleanup
+  173  git status
+  174  git add .
+  175  git commit -m "Fixed querySelector class for quiz-container" --no-verify
+  176  git push origin code-cleanup
+  177  git status
+  178  git add .
+  179  git commit -m "Changed navh1 elementsfrom innerHTML to textContent" --no-verify
+  180  git push origin code-cleanup
+  181  git status
+  182  git switch master
+  183  git pull origin master
+  184  git branch project-interfaces
+  185  git switch project-interfaces
+  186  git status
+  187  git add .
+  188  git commit -m "Mobile responsiveness, added a loading animation before questions appear, and incorrectly typed pokedex show an error modal" --no-verify
+  189  git push origin project-interfaces
+  190  git status
+  191  git add .
+  192  git commit -m "Added cursor to trash icon" --no-verify
+  193  git status
+  194  git add .
+  195  git commit -m "Changed loading animation from being recreated every question to being visible then hidden" --no-verify
+  196  git push origin project-interfaces
+  197  git status
+  198  git add .
+  199  git commit -m "Fixed $loadingIcon.className value" --no-verify
+  200  git push origin project-interfaces
+  201  git switch master
+  202  git pull origin master
+  203  git branch user-can-delete
+  204  git switch user-can-delete
+  205  git switch master
+  206  git branch -d user-can-delete
+  207  git branch --list
+  208  git branch user-hard-mode
+  209  git switch user-hard-mode
+  210  git switch master
+  211  git branch -d user-hard-mode
+  212  git branch user-can-delete
+  213  git switch user-can-delete
+  214  git status
+  215  git add .
+  216  git commit -m "User can now delete an old score and view instructions" --no-verify
+  217  git push origin user-can-delete
+  218  git status
+  219  git add .
+  220  git commit -m "Cleaned up codecode" --no-verify
+  221  git push origin user-can-delete
+  222  git status
+  223  git add .
+  224  git commit -m "Fixed functionality for user viewing instructions" --no-verify
+  225  git push origin user-can-delete
+  226  git status
+  227  git add . 
+  228  git commit -m "Combined opening instruciton modal and closing model function" --no-verify
+  229  git push origin user-can-delete
+  230  git status
+  231  git add .
+  232  git commit -m "Fixed trainer data titles to appear below pokemon sprite" --no-verify
+  233  git push origin user-can-delete
+  234  git status
+  235  git commit -m "Fixed margin on mobile screens" --no-verify
+  236  git push origin user-can-delete
+  237  git status
+  238  git add .
+  239  git commit -m "function instruction, not Instruction" --no-verify
+  240  git push origin user-can-delete
+  241  git switch master
+  242  git pull origin master
+  243  git branch user-change-mode
+  244  git switch user-change-mode
+  245  git status
+  246  git add .
+  247  git commit -m "User can now do hard-mode" --no-verify
+  248  git push origin user-change-mode
+  249  git status
+  250  git add . 
+  251  git commit -m "Removed comments" --no-verify
+  252  git push origin user-change-mode
+  253  git switch master
+  254  git pull origin master
+  255  git status
+  256  git add .
+  257  git commit -m "fixing mobile logo"
+  258  git status
+  259  ls
+  260  cd repos
+  261  cd ajax-project
+  262  ls
+  263  git status
+  264  git add .
+  265  git commit -m "Set a max-height to pokemon images and logo so it won't expand on mobile devices" --no-verify
+  266  git push origin master
+  267  git status
+  268  ls
+  269  cd repos
+  270  ls
+  271  cd ajax-project
+  272  git status
+  273  git add .
+  274  git commit -m "Mobile responsiveness for logo" --no-verify
+  275  git push origin master
+  276  git status
+  277  git commit -m "Responsive intrinsic height" --no-verify
+  278  git add .
+  279  git commit -m "Responsive intrinsic height" --no-verify
+  280  git push origin master
+  281  cd repos
+  282  ls
+  283  cd c0821-code-solutions/
+  284  git branch http-messages
+  285  git switch http-messsages
+  286  git switch http-messages
+  287  ls
+  288  cd http-messages/
+  289  https https://example.com
+  290  https example.com
+  291  http https://example.com
+  292  http --verbose https://example.com
+  293  http --body GET https://jsonplaceholder.typicode.com/users > users.json
+  294  http --body GET https://example.com > index.html
+  295  git status
+  296  git add .
+  297  git commit -m "Completed http-messages exercise."
+  298  git push origin http-messages
+  299  git switch master
+  300  cd -
+  301  git pull origin master
+  302  git branch javascript-ajax
+  303  git switch javascript-ajax
+  304  git status
+  305  git add .
+  306  git status
+  307  git commit -m "Completed javascript.ajax"
+  308  git push origin javascript-ajax
+  309  cd repos
+  310  cd c0821-code-solutions/
+  311  ls
+  312  git status
+  313  git commit -m "es6-arrow-functions" --no-verify
+  314  rm .git/index.lock
+  315  git status
+  316  git commit -m "Completed es6-arrow-functions exercise."
+  317  git push origin es6-arrow-functions
+  318  git switch master
+  319  git pull origin master
+  320  cd
+  321  command -v git
+  322  ls
+  323  cd repos
+  324  ls
+  325  cd c0821-code-solutions/
+  326  git branch command-line-basics
+  327  git switch command-line-basics
+  328  cd command-line-basics/
+  329  pwd
+  330  man
+  331  man man
+  332  man cat
+  333  man cat laziness.txt
+  334  cat laziness-txt
+  335  cat laziness.txt
+  336  cat impatience.txt
+  337  cat hubris.txt
+  338  man cat
+  339  cat laziness.txt impatience.txt hubris.txt
+  340  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  341  cat three-vitues.txt
+  342  cat three-virtues.txt
+  343  man ls
+  344  man cat
+  345  ls
+  346  ls -a
+  347  ls -F
+  348  man ls
+  349  ls -aF lfz-staff > lfz-staff/contents.txt
+  350  ls
+  351  ls lfz-staff
+  352  cat lfz-staff/contents.txt
+  353  man pwd
+  354  pwd
+  355  ls
+  356  man ls
+  357  pwd > t-was-here.txt
+  358  ls
+  359  pwd > i-was-here.txt
+  360  cat i-was-here.txt
+  361  man echo
+  362  echo 'Hello, World!'
+  363  echo 'Hello, World!' > hello.txt
+  364  ls
+  365  cat hello.txt
+  366  man touch
+  367  touch tag-youre-it.txt
+  368  ls
+  369  touch snoot/boop.txt
+  370  ls snoot
+  371  pwd snoot
+  372  ls
+  373  man mkdir
+  374  pwd
+  375  mkdir parent
+  376  ls
+  377  mkdir -p
+  378  man mkdir
+  379  mkdir parent -p child
+  380  ls
+  381  mkdir parent/child/grandchild -p
+  382  ls
+  383  ls parent
+  384  ls child
+  385  ls parent/child
+  386  touch parent/child/grandchild/.gitkeep
+  387  ls parent/child/grandchild
+  388  ls -a parent/child/grandchild
+  389  man mv
+  390  ls
+  391  rm lol.txt
+  392  ls
+  393  man rm
+  394  rm -r kill-me/
+  395  ls
+  396  man cp
+  397  ls 
+  398  cat and-then.txt
+  399  cp and-then.txt no-and-then.txt
+  400  ls
+  401  cp no-and-then.txt
+  402  cat no-and-then.txt
+  403  man history
+  404  history
+  405  history > command-history.txt
