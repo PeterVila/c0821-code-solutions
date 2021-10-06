@@ -10,6 +10,8 @@ function specificFile(file) {
   });
 }
 
-for (var i = 2; i < process.argv.length; i++) {
-  specificFile(process.argv[i]);
+const [, , ...args] = process.argv;
+
+for (var i = 0; i < args.length; i++) {
+  specificFile(args[i]);
 }
