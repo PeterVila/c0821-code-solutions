@@ -15,20 +15,16 @@ if (feature === 'create') {
 }
 
 if (feature === 'delete') {
-  for (const noteID in data.notes) {
-    if (noteID === newNote) {
-      delete data.notes[noteID];
-      updateDataJson();
-    }
+  if (newNote) {
+    delete data.notes[newNote];
+    updateDataJson();
   }
 }
 
 if (feature === 'update') {
-  for (const noteID in data.notes) {
-    if (noteID === newNote) {
-      data.notes[newNote] = process.argv[4];
-      updateDataJson();
-    }
+  if (newNote) {
+    data.notes[newNote] = process.argv[4];
+    updateDataJson();
   }
 }
 
