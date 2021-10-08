@@ -9,8 +9,11 @@ app.listen(3000, () => {
   console.log('Express server listening on port 3000');
 });
 
-const gradesArr = [];
 app.get('/api/grades', function (req, res) {
+  const gradesArr = [];
+  for (const key in grades) {
+    gradesArr.push(grades[key]);
+  }
   res.json(gradesArr);
 });
 
@@ -23,10 +26,7 @@ app.post('/api/grades', function (req, res) {
     score: req.body.score,
     id: nextId
   };
+  grades[nextId] = gradeObj;
   res.status(201).json(gradeObj);
-  grades.nextId = gradeObj;
   nextId++;
-  for (const key in grades) {
-    gradesArr.push(grades[key]);
-  }
 });
