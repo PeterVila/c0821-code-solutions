@@ -23,19 +23,18 @@ console.log(firstLetters);
 function map(array, transform) {
   const ouput = [];
   for (let i = 0; i < array.length; i++) {
-    ouput.push(transform[i]);
+    var outputElement = transform(array[i]);
+    ouput.push(outputElement);
   }
   return ouput;
 }
-console.log(map(numbers, doubled));
-console.log(map(numbers, prices));
-console.log(map(languages, upperCased));
+console.log(map(numbers, number => number * 2));
+console.log(map(languages, language => language.toUpperCase()));
 
 /*
 Create an empty array ouput
 Loop through array elements.
 Call function transform with the current element as the argument.
-Push the result of the mapFunc
-function to the mapArr array.
+  and push those results to ouput
 Return the mapArr array after going through all the elements.
 */
