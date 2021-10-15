@@ -12,16 +12,7 @@ const names = [
   'Donna'
 ];
 
-function isEven(num) {
-  for (let i = 2; num > i; i++) {
-    if (num % 2 === 1) {
-      return false;
-    }
-  }
-  return num > 1;
-}
-
-const evenNumbers = numbers.filter(isEven);
+const evenNumbers = numbers.filter(number => number % 2 === 0);
 const overFive = numbers.filter(number => number > 5);
 const startWithE = names.filter(name => name.charAt(0) === 'E');
 const haveD = names.filter(name => name.includes('D') || name.includes('d'));
