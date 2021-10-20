@@ -8,6 +8,7 @@ class Stopwatch extends React.Component {
       isClicked: false
     };
     this.handleClick = this.handleClick.bind(this);
+    this.resetClick = this.resetClick.bind(this);
   }
 
   startTime() {
@@ -20,6 +21,10 @@ class Stopwatch extends React.Component {
     clearInterval(this.countdown);
   }
 
+  resetTime() {
+    this.setState({ seconds: 0 });
+  }
+
   handleClick() {
     this.setState(prevState => ({
       isClicked: !prevState.isClicked
@@ -28,6 +33,12 @@ class Stopwatch extends React.Component {
       this.pauseTime();
     } else {
       this.startTime();
+    }
+  }
+
+  resetClick() {
+    if (!this.state.isClicked) {
+      this.resetTime();
     }
   }
 
@@ -42,7 +53,7 @@ class Stopwatch extends React.Component {
     } else {
       return (
         <div className="container">
-          <div className="circle"><h1>{this.state.seconds}</h1></div>
+          <div onClick={this.resetClick} className="circle"><h1>{this.state.seconds}</h1></div>
           <i onClick={this.handleClick} className="fas fa-play"></i>
         </div>
       );
