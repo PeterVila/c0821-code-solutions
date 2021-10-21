@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  width: 10rem;
+}
+
+.circle {
+  width: 10rem;
+  height: 10rem;
+  border: 0.5rem solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  align-self: center;
+  margin: none;
+}
