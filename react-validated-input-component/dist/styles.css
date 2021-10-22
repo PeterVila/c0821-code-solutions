@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 1.5rem;
+}
+
+input {
+  width: 12rem;
+  border: 0.25rem solid black;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+}
+
+p {
+  color: red;
+}
+
+.icon {
+  font-size: 1.75rem;
+}
+
+.good {
+  color: rgb(60, 206, 38);
+}
+
+.bad {
+  color: red;
+}
