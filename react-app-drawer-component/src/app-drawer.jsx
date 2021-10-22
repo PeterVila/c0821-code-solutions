@@ -16,13 +16,15 @@ class AppDrawer extends React.Component {
   }
 
   render() {
-    if (!this.state.isClicked) {
-      return (
+    const isClicked = this.state.isClicked ? 'show-nav' : 'hide-nav';
+    const modalBackground = this.state.isClicked ? 'nav-background' : '';
+    const backdrop = this.state.isClicked ? this.handleClick : '';
+    return (
         <div>
-        <div>
-            <i onClick={this.handleClick} className="fas fa-bars"></i>
-            <div className="backdrop"></div>
-            <div className="nav-slider hide-nav">
+        <div className={modalBackground}>
+            <i onClick={this.handleClick} className="hamburger fas fa-bars"></i>
+            <div onClick={ backdrop } className="backdrop"></div>
+            <div className={`nav-slider ${isClicked}`}>
               <h3>Choose a Game</h3>
               <ul>
                 <li onClick={this.handleClick}>The Legend Of Zelda</li>
@@ -34,27 +36,7 @@ class AppDrawer extends React.Component {
             </div>
           </div>
         </div>
-      );
-    } else {
-      return (
-        <div>
-        <div className="nav-background">
-            <i onClick={this.handleClick} className="fas fa-bars"></i>
-            <div onClick={this.handleClick} className="backdrop"></div>
-            <div className="nav-slider show-nav">
-              <h3>Choose a Game</h3>
-              <ul>
-                <li onClick={this.handleClick}>The Legend Of Zelda</li>
-                <li onClick={this.handleClick}>A Link to the Past</li>
-                <li onClick={this.handleClick}>Ocarina of Time</li>
-                <li onClick={this.handleClick}>The Wind Waker</li>
-                <li onClick={this.handleClick}>Breath of the Wild</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      );
-    }
+    );
   }
 }
 

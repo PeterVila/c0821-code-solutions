@@ -4,7 +4,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.fa-bars {
+.hamburger {
   font-size: 2rem;
   position: absolute;
   margin: 1rem;
@@ -41,7 +41,7 @@
 ul {
   list-style-type: none;
   margin-top: 1rem;
-  -webkit-padding-start: 0;
+  padding-left: 0;
 }
 
 h3 {
