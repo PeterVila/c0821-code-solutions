@@ -1,0 +1,25 @@
+* {
+  font-family: sans-serif;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.accordion {
+  width: 40%;
+}
+
+.topic {
+  background-color: wheat;
+  border: 1px solid black;
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+}
+
+.content {
+  border: 1px solid black;
+  padding: 1rem;
+}
