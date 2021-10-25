@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+#root {
+  margin: 2rem auto;
+}
+
+.container {
+  border: 0.25rem solid black;
+  width: 70%;
+  height: 70vh;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.left {
+  width: 20%;
+  height: 100%;
+}
+
+.middle {
+  width: 80%;
+  height: 100%;
+}
+
+.title {
+  height: 7.5%;
+  text-align: center;
+  padding-top: 1.75rem;
+}
+
+.photo {
+  height: 72.5%;
+  display: flex;
+  justify-content: center;
+}
+
+.orb {
+  height: 20%;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+
+.orb i {
+  margin: 1rem;
+}
+
+.right {
+  width: 20%;
+  height: 100%;
+}
+
+img {
+  width: 80%;
+  margin: 3rem 2.5rem;
+}
+
+.side-buttons {
+  text-align: center;
+  font-size: 5rem;
+  padding-top: 20%;
+}
+
+i:hover {
+  color: rgb(80, 197, 199);
+  cursor: pointer;
+}
