@@ -45,6 +45,7 @@ export default class App extends React.Component {
       if (this.state.todos[i].todoId === todoId) {
         todoIndex = i;
         checked = { isCompleted: !this.state.todos[i].isCompleted };
+        break;
       }
     }
     fetch(`/api/todos/${todoId}`, {
@@ -56,7 +57,7 @@ export default class App extends React.Component {
     })
       .then(response => response.json())
       .then(todo => {
-        const newTodos = this.state.todos;
+        const newTodos = this.state.todos.slice();
         newTodos[todoIndex] = todo;
         this.setState({ todos: newTodos });
       })
@@ -68,6 +69,7 @@ export default class App extends React.Component {
     for (let i = 0; i < this.state.todos.length; i++) {
       if (this.state.todos[i].todoId === todoId) {
         todoIndex = i;
+        break;
       }
     }
     fetch(`/api/todos/${todoId}`, {
@@ -77,7 +79,7 @@ export default class App extends React.Component {
       }
     })
       .then(() => {
-        const newTodos = this.state.todos;
+        const newTodos = this.state.todos.slice();
         newTodos.splice(todoIndex, 1);
         this.setState({
           todos: newTodos
