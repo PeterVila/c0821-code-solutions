@@ -1,0 +1,14 @@
+.is-completed {
+  opacity: 0.5;
+  font-style: italic;
+  text-decoration: line-through;
+}
+
+button {
+  border-radius: 3rem;
+}
+
+.form-check {
+  display: flex;
+  justify-content: space-between;
+}
