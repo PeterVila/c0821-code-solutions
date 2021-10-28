@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make Counter</title>
+</head>
+
+<body>
+
+  <script>
+    var counter = function () {
+      var updateCounter = 0;
+
+      function changeBy(val) {
+        updateCounter += val;
+      }
+      return {
+        increment: function () {
+          changeBy(1);
+        },
+
+        decrement: function () {
+          changeBy(-1);
+        },
+
+        value: function () {
+          return updateCounter;
+        }
+      };
+    };
+
+    var counter1 = counter();
+    console.log('Counter initialized', counter1.value()); // Starts at 0
+    counter1.increment();
+    counter1.increment();
+    console.log('Counter after 2 increments', counter1.value()); // 2.
+    counter1.decrement();
+    console.log('Counter after 1 decrement', counter1.value()); // 1.
+
+  </script>
+</body>
+
+</html>
